@@ -8,7 +8,7 @@ import AddNew from './AddNew';
 
 function App() {
   //return only objects inside thew oses collection not the subcollection
-  const query = collection(db, `oses`)
+  const query = collection(db, `products`)
   
  // const query =collection(db,'oses',"Windows","children")
   const [ docs,loading,error] = useCollectionData(query)
@@ -24,12 +24,12 @@ function App() {
       {/* under our list document we must display each children of our document whic is our subcollection */}
       </li>
     {/* because our query will take our database  and the path because we well have to choose the path based on the choice of our and we must spacify our subcollection*/}
-      <ChildrenList path={`oses/${doc.brandName}/children`} />
-      <ChildrenList path={`oses/${doc.brandCategory}/children`} />
+      <ChildrenList path={`products/${doc.selectBrand}/children`} />
+      <ChildrenList path={`products/${doc.brandCategory}/children`} />
       </div>
       ))}
     </ul>
-    <AddNew path="oses"/>
+    <AddNew path="productsInfo"/>
     </div>
   );
 }

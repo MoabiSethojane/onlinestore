@@ -24,7 +24,7 @@ function App() {
       {/* under our list document we must display each children of our document whic is our subcollection */}
       </li>
     {/* because our query will take our database  and the path because we well have to choose the path based on the choice of our and we must spacify our subcollection*/}
-      <ChildrenList path={`oses/${doc.name}/children`} />
+      <ChildrenList path={`products/${doc.brandName}/children`} />
       </div>
       ))}
     </ul>

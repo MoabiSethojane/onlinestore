@@ -6,12 +6,13 @@ import{getFirestore} from '@firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCBzxQbwPiEEDALA-MNVwrvcpz0HYj6hoQ",
-  authDomain: "onlinestore-bddc1.firebaseapp.com",
-  projectId: "onlinestore-bddc1",
-  storageBucket: "onlinestore-bddc1.appspot.com",
-  messagingSenderId: "644079446541",
-  appId: "1:644079446541:web:91fa37e05412072ee90344"
+  apiKey: "AIzaSyDG8_Lz9ggCm-gA1UM6TftJoSnTX7m-NWw",
+  authDomain: "revelationapp-390bd.firebaseapp.com",
+  databaseURL: "https://revelationapp-390bd-default-rtdb.firebaseio.com",
+  projectId: "revelationapp-390bd",
+  storageBucket: "revelationapp-390bd.appspot.com",
+  messagingSenderId: "465444417647",
+  appId: "1:465444417647:web:54b90ab71cf4b21a26dd9a"
 };
 
 // Initialize Firebase

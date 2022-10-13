@@ -6,10 +6,11 @@ export default function AddNew({path}) {
 //     // we use useRef hook for our input field
    const name = useRef()
    const brandName = useRef()
+   const brandCategory = useRef()
     async function  handleSubmit(e){
         e.preventDefault()
-        const docRef= doc(db,path, name.current.value,brandName.current.value);
-        await setDoc(docRef, {name: name.current.value})
+        const docRef= doc(db,path, name.current.value,brandName.current.value,brandCategory.current.value );
+        await setDoc(docRef, {brandName: brandName.current.value, brandCategory: brandCategory.current.value})
         // we use addDoc if we use the auto generated id in this case we are using name 
        //and if we use id we must not use the path prop
        // await setDoc(docRef, {path})
@@ -27,7 +28,7 @@ export default function AddNew({path}) {
 //         <option value="Brand 3">Brand 3</option>
 //         <option value="Brand 4">Brand 4</option>
 //       </select>
-<select name="" id=""  >
+<select name="" id="" ref={brandCategory}  >
 //         <option value="Category 1">Select Category</option>
 //         <option value="Category 2">Summer</option>
 //         <option value="Category 3">Winter</option>

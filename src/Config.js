@@ -6,7 +6,7 @@ import{getFirestore} from '@firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDG8_Lz9ggCm-gA1UM6TftJoSnTX7m-NWw",
+ apiKey: "AIzaSyDG8_Lz9ggCm-gA1UM6TftJoSnTX7m-NWw",
   authDomain: "revelationapp-390bd.firebaseapp.com",
   databaseURL: "https://revelationapp-390bd-default-rtdb.firebaseio.com",
   projectId: "revelationapp-390bd",
